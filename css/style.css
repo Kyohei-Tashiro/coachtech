@@ -1,0 +1,495 @@
+@charset "utf-8";
+
+/* リセットcss */
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display:block;
+    height:1px;
+    border:0;  
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+
+/* その他のスタイルは以下に記述していきます */
+
+
+
+
+
+
+.header {
+  height: 70px;
+  background: #000;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 35px;
+  color: #f2f2f2;
+  line-height: 70px;
+}
+
+.header-nav ul{
+  display: flex;
+}
+
+.header-nav li {
+  margin-right: 35px;
+  font-size: 16px;
+}
+
+.header-nav a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+#eyecatch {
+  height: 800px;
+  background: url(../img/eyecatch.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.main-eyecatch {
+  position: relative;;
+  top: 50%;
+  left: 10%;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: bold;
+  color: white;
+  line-height: 1;
+}
+
+.news{
+ display: flex;
+ justify-content: flex-end;
+ position: absolute;
+ right: 0;
+ bottom: 0;
+}
+
+.news-contents{
+  font-size: 20px;
+  width: 700px;
+  height: 70px;
+  background:white;
+
+}
+
+.date{
+  padding-top: 3px;
+  padding-left: 3px;
+}
+
+.news-title{
+ padding-top: 15px;
+ padding-left: 15px;
+}
+
+.news-logo{
+  font-size: 20px;
+  width: 160px;
+  height: 70px;
+  color: white;
+  background:black;
+}
+
+.news-logo p{
+  text-align: center;
+  padding-top: 20px;
+}
+
+.mission{
+  color: white;
+  background-color: black;
+  height: 500px;
+}
+
+.mission-message{
+  position: relative;
+  top:-400px;
+  left: 50px;
+}
+
+.mission-message1{
+  padding-left: 150px;
+  padding-top: 50px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.mission-message2{
+  width: 900px; ;
+  padding-left: 150px;
+  padding-top: 50px;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.mission-link{
+  color: black;
+  width: 200px;
+  height: 30px;
+  margin-top: 30px;
+  margin-left: 150px;
+  background-color: white;
+  text-align: center;
+  padding-top: 15px;
+  font-weight: bold;
+}
+
+.mission-img img{
+  position: relative;
+  width: 650px;
+  height: 450px;
+  top: 100px;
+  left: 850px;
+}
+
+.yohaku{
+  background-color: white;
+  height: 100px;
+}
+
+.service{
+  background-color: #F5F5F5;
+  height: 1600px;
+}
+
+.service-maintitle{
+  font-size: 30px;
+  text-align: center;
+  padding-top: 15px;
+  font-weight: bold;
+}
+
+.servise-main1{
+  background-color: white;
+  height: 350px;
+  width: 700px;
+  position: relative;
+  top:-300px;
+  left: 200px;
+}
+
+.service-title{
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+  top:50px;
+  left:50px;
+}
+
+.service-subtitle{
+  font-size: 20px;
+  position: relative;
+  top:70px;
+  left: 50px;
+}
+
+.service-content{
+  width: 550px;
+  font-size: 15px;
+  position: relative;
+  top:100px;
+  left: 50px;
+  line-height: 20px;
+}
+
+.service-link{
+  font-size: 15px;
+  border: 1px black solid;
+  height: 30px;
+  width: 150px;
+  padding-top: 15px;
+  text-align: center;
+  position: relative;
+  top:150px;
+  left: 450px;
+}
+
+.service2-img img{
+  height: 450px;
+  width: 700px;
+  position: relative;
+  top:100px;
+  left:800px;
+  
+}
+
+.servise-main2{
+  background-color: white;
+  height: 350px;
+  width: 700px;
+  position: relative;
+  top:-370px;
+  left:620px;
+}
+
+.service1-img img{
+  height: 450px;
+  width: 700px;
+}
+
+
+.info{
+  background-color: white;
+  height: 750px;
+}
+
+.company-recruit{
+  display: flex;
+  justify-content: space-between;
+}
+
+.company img{
+  top: 100px;
+  height: 250px;
+  width: 700px;
+  position: relative;
+}
+
+.recruit img{
+   top: 100px;
+   height: 250px;
+   width: 700px;
+   position: relative;
+}
+
+.company-title{
+  font-size: 25px;
+  font-weight: bold;
+  margin-top:-50px;
+  margin-left: 250px;
+  color:white;
+  position: relative;
+  
+}
+
+.company-subtitle{
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 280px;
+  color:white;
+  position: relative;
+}
+
+.recruit-title{
+  font-size: 25px;
+  font-weight: bold;
+  margin-top:-50px;
+  margin-left: 300px;
+  color:white;
+  position: relative;
+  
+}
+
+.recruit-subtitle{
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-left: 315px;
+  color:white;
+  position: relative;
+}
+
+.faq{
+  background-color: black;
+  color: white; 
+  height: 100px;
+  width: 1000px;
+  margin-top: 250px;
+  margin-right:auto;
+  margin-left:auto;
+  position: relative;
+}
+
+.faq-title{
+font-size: 30px;
+font-weight: bold;
+line-height: 100px;
+padding-left: 40px;
+
+}
+
+.faq-subtitle{
+  position: absolute;
+  top: 50%;
+  left: 45%;
+
+}
+
+.contact{
+  color: white;
+  height: 700px;
+  background: url(../img/contact-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+
+.contact-title{
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 200px;
+}
+
+.contact-subtitle{
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.contact-message{
+font-size: 45px;
+font-weight: lighter;
+text-align: center;
+padding-top: 40px;
+}
+
+.contact-submessage{
+  font-size: 15px;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.contact-link{ 
+  text-align: center;
+  border: 1px white solid;
+  height: 30px;
+  width: 150px;
+  margin: 40px auto;
+  padding-top: 12px;
+  font-weight: bold;
+} 
+
+#footer {
+  height: 100px;
+  background: #000;
+}
+
+
+
+.footer-nav ul{
+ padding-top: 30px;
+ display: flex;
+ justify-content: flex-end;
+   
+}
+
+.footer-nav li {
+  margin-right: 35px;
+  font-size: 16px;
+  position: right;
+}
+
+.footer-nav a {
+  color: #f2f2f2;
+  text-decoration: none;
+}
+
+#footer p{
+  color: white;
+  text-align: center;
+  position: relative;
+  top:35px
+}
