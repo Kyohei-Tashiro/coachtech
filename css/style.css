@@ -100,7 +100,9 @@ input, select {
 
 
 
-
+/* .main{
+  overflow:scroll;
+} */
 
 
 .header {
@@ -260,16 +262,6 @@ input, select {
   position: relative;
 }
 
-/* float:leftで画面大きくしてもカメラ画像は右寄りになった
-しかし画面小さくするとmai1がカメラの下にスライド
-
-main2も押しやられる
-
-からmain1を絶対配置にすると上記問題は解消
-
-しかし画面小さいとき、main1の画面から隠れた左側の部分は表示されない */
-
-/* flex boxか */
 
 /* .servise-main1-flex{
    display: flex;
@@ -282,7 +274,7 @@ main2も押しやられる
   height: 350px;
   width: 700px;
   top: 150px;
-  right: -50px;
+  right: 600px;
   float: right;
   
 } */
@@ -297,10 +289,6 @@ main2も押しやられる
   top: 200px;
   right: 600px;
   float: right;
-
-左側のma-gin確保
-
-  /* max-width: 100%; */
   
 }
 
@@ -310,6 +298,7 @@ main2も押しやられる
   width: 700px;
   top: 100px;
   float: right;
+  right: 0px;
 }
 
 
