@@ -1,0 +1,629 @@
+@import url("reset.css");
+
+.header {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 70px;
+   padding: 0 30px;
+   background-color: #fff;
+   position: sticky;
+   left: 0;
+   top: 0;
+   z-index: 1;
+   
+
+}
+
+.header-ttl {
+    font-size: 24px;
+    width: 80px;
+}
+.header-ttl a{
+    text-decoration: none;
+    color: black;
+}
+
+.header-nav-list {
+    display: flex;
+    font-weight: bold;
+    list-style: none;
+}
+
+.header-nav-item {
+    margin-right: 30px;
+    
+     
+}
+.header-nav-item a{
+   text-decoration: none;
+   color: black;
+     
+}
+
+
+
+.menu-content{
+  display: none;
+}
+
+.hamburger-menu{
+  display: none;
+}
+
+
+
+
+.firstview{
+  height: 500px;
+  background: url(../img/mv.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.catchcopy{
+  position: relative;
+  height: 100%;
+  /* 遷移先に適用 */
+}
+
+.catchcopy-ja{
+  position: relative;
+  top: 40%;
+  text-align: center;
+  font-size: 40px;
+  font-style: italic;
+  color: #fff;
+  line-height: 1;
+}
+
+.catchcopy-en{
+  position: relative;
+  top: 45%;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 1
+}
+
+.vision{
+  height: 300px;
+  color: white;
+  background-color: #222222;
+}
+
+.vision-content{
+  width: 70%;
+  margin:auto;
+  padding-top:60px;
+}
+
+.vision-title{
+font-size: 30px;
+}
+
+.vision-main{
+  padding-top: 20px;
+  font-size: 16px;
+}
+
+.service-title{
+  text-align: center;
+  font-size: 30px;
+  padding-top: 50px;
+}
+
+.service-contents{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right:10%;
+  margin-left:10%;
+}
+
+
+.service-container{
+  width: 40%;
+  padding: 20px 10px;
+}
+ 
+.service-container img{
+   width: 100%;
+} 
+
+.service-main{
+  font-weight: bold;
+}
+
+
+
+
+.btn-area{
+ display: flex;
+ justify-content: center;
+ padding: 50px;
+}
+
+
+.btn-area a{
+list-style: none;
+color: white;
+background-color:red;
+width: 300px;
+height: 40px;
+text-align: center;
+padding-top: 10px;
+text-decoration: none;
+}
+
+.news{
+  height: 600px;
+  background-color:black;
+  position: relative;
+}
+
+.news-container{
+  width: 70%;
+  height: 70%;
+  background-color: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.news-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-top: 10px;
+}
+
+.news-head p{
+  color: white;
+  font-size: 26px;
+}
+
+.news-head a{
+  font-size: 16px;
+  list-style: none;
+  text-decoration: none;
+  margin-right: 0px;
+  color: white;
+  background-color:red;
+  width: 250px;
+  height: 30px;
+  text-align: center;
+  padding-top: 5px;
+}
+
+.news-contents{
+  margin-top: 20px;
+}
+
+.news-contents a{
+  display:block;
+  width: 100%;
+  height: 50px;
+  font-size: 18px;
+  list-style: none;
+  text-decoration: none;
+  background-color: white;
+  color: black;
+  padding-top: 20px;
+  margin-top: 15px;
+}
+
+.news-contents a span{
+  padding-left: 15px;
+  font-weight: bold;
+  font-size:18px ;
+}
+
+.blog{
+  height: 600px;
+  display: block;
+}
+
+.blog-title{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  padding:50px;
+}
+.blog-box{
+  height: 45%;
+  display: block;
+}
+
+.blog-list{
+  display: flex;
+  justify-content: center;
+  margin:0px 15%;
+  width: 70%;
+  height: 300px;
+}
+
+.blog-content{
+margin-left: 20px;
+}
+
+
+.blog-content img{
+  width: 100%;
+  height: 60%;
+}
+
+
+
+.blog-title-btn{
+  list-style: none;
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  width: 100%;
+}
+
+
+
+.company-recruit{
+  display: flex;
+  height: 200px;
+}
+
+.company-btn-text{
+width: 50%;
+background-color: red;
+list-style: none;
+text-decoration: none;
+color: white;
+}
+
+.recruit-btn-text{
+  width: 50%;
+  background-color: black;
+  list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+.company-btn-text span{
+  display: block;
+  text-align: center;
+  line-height: 8;
+  font-size: 24px;
+}
+
+.recruit-btn-text span{
+  display: block;
+  text-align: center;
+  line-height: 8;
+  font-size: 24px;
+}
+
+.contact{
+  position: relative;
+  height: 400px;
+}
+
+.contact-title{
+  padding-top: 100px;
+  padding-bottom: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.contact-text{
+text-align: center;
+}
+
+.contact-btn-area{
+ display: flex;
+ justify-content: center;
+ padding: 30px;
+}
+
+.contact-btn-area a{
+list-style: none;
+color: white;
+background-color:red;
+width: 300px;
+height: 40px;
+text-align: center;
+padding-top: 10px;
+text-decoration: none;
+}
+
+
+
+
+
+.footer-inner{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   height: 70px;
+   padding: 0 30px;
+   background-color:black;
+   left: 0;
+   top: 0;
+   z-index: 1;
+}
+
+.footer-copyright{
+  font-size: 16px;
+  height: 20px;
+    width: 150px;
+    color: white;
+    margin-left: 15%;
+}
+
+.footer-nav-list {
+    display: flex;
+    list-style: none;
+    margin-right: 150px;
+}
+
+.footer-nav-item {
+    margin-right: 20px;
+}
+.footer-nav-item a{
+  font-size: 10px;
+  text-decoration: none;
+  color: white;
+}
+
+.tate{
+  font-size: 16px;
+  text-decoration: none;
+  color: white;
+  margin-right: 20px;
+}
+
+
+@media screen and (max-width: 768px) {
+
+
+.header-nav{
+    display: none;
+}
+
+.hamburger-menu{
+  display:block ;
+}
+
+.menu-content{
+  display: block;
+}
+
+.menu-btn {
+    position: fixed;
+    top: 2px;
+    right: 10px;
+    display: flex;
+    height: 65px;
+    width: 65px;
+    justify-content: center;
+    align-items: center;
+    z-index: 90;
+}
+.menu-btn span,
+.menu-btn span:before,
+.menu-btn span:after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 30px;
+    background-color:black;
+    position: absolute;
+}
+.menu-btn span:before {
+    bottom: 8px;
+}
+.menu-btn span:after {
+    top: 8px;
+}
+
+#menu-btn-check:checked ~ .menu-btn span {
+    background-color: rgba(255, 255, 255, 0);
+}
+#menu-btn-check:checked ~ .menu-btn span::before {
+    bottom: 0;
+    transform: rotate(45deg);
+}
+#menu-btn-check:checked ~ .menu-btn span::after {
+    top: 0;
+    transform: rotate(-45deg);
+}
+
+#menu-btn-check {
+    display: none;
+}
+
+.menu-content {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 100%;
+    z-index: 80;
+    background-color: white;
+    transition: all 0.9s;
+}
+
+
+
+#menu-btn-check:checked ~ .menu-content {
+    right: 0;
+}
+
+
+
+.menu-content ul {
+    padding: 70px 10px 0;
+}
+.menu-content ul li {
+    text-align: center;
+}
+
+.menu-content ul li a {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    box-sizing: border-box;
+    color:blue;
+    text-decoration: none;
+    padding: 20px 0px;
+    position: relative;
+}
+
+.menu-content ul li a::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-top: solid 2px #ffffff;
+    border-right: solid 2px #ffffff;
+    transform: rotate(45deg);
+    position: absolute;
+    right: 11px;
+    top: 16px;
+}
+
+
+
+
+  
+.catchcopy{
+  padding:20% 5%;
+}
+
+
+.catchcopy-ja{
+  font-size: 50px;
+  top:5%;
+  line-height: 70px;
+  margin: 0px 10%;
+}
+
+.catchcopy-en{
+  top: 10%;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0px 10%;
+}
+
+.vision{
+  height: 400px;
+}
+
+.vision-content{
+  padding-top:20px;
+  width: 80%;
+}
+
+.vision-title{
+  font-size: 24px;
+
+}
+
+.service-container{
+  width: 90%;
+}
+
+.news{
+ height: 400px; 
+}
+
+.news-container{
+  width: 80%;
+  top:60%;
+}
+
+.news-head p{
+  font-size: 24px;
+}
+
+.news-head a{
+  width: 180px;
+}
+
+
+
+.news-contents a{
+  font-size: 14px;
+  height: 30px;
+  padding-top: 10px;
+}
+
+.news-contents a span{
+  font-size: 14px;
+}
+
+.blog{
+  height: 1100px;
+}
+
+.blog-box{
+  height: 72%;
+}
+
+.blog-list{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px 15%;
+}
+
+.blog-content{
+  width: 90%;
+  margin: 0;
+}
+
+.contact-text{
+  padding: 0% 10%;
+}
+
+.footer{
+  height: 300px;
+}
+
+.footer-inner{
+  height: 100%;
+  justify-content: center;
+  display: block;
+}
+
+.footer-copyright{
+  margin: 0px 35%;
+  position: relative;
+  top:20px;
+}
+
+.footer-nav{
+  display: block;
+  position: relative;
+  top:10px;
+  height: 60%;
+}
+
+.footer-nav-list{
+  display: block;
+  margin: 5% 0%;
+  height: 100%;
+}
+
+.footer-nav-item{
+  display: block;
+  width: 80%;
+  padding: 3px 10%;
+  text-align: center;
+}
+
+
+.tate{
+  display: none;
+}
+}
