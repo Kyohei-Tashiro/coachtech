@@ -62,10 +62,11 @@
   position: relative;
   top: 40%;
   text-align: center;
-  font-size: 40px;
+  font-size: 34px;
   font-style: italic;
   color: #fff;
   line-height: 1;
+  font-weight: bold;
 }
 
 
@@ -114,6 +115,7 @@
 
 .contact{
   height: 400px;
+  background-color: #F5F6F9;
 }
 
 .contact-title{
