@@ -64,7 +64,7 @@
 }
 
 .blog {
-  height: 750px;
+  height: 800px;
 }
 
 .blog-list {
@@ -81,7 +81,7 @@
 }
 
 .blog-content img {
-  width: 90%;
+  width: 100%;
   height: 80%;
 }
 
@@ -126,10 +126,12 @@
   text-align: center;
   padding-top: 10px;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .footer-inner {
   display: flex;
+  flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
   height: 70px;
@@ -141,24 +143,27 @@
 }
 
 .footer-copyright {
-  font-size: 16px;
+  font-size: 14px;
   height: 20px;
   width: 150px;
   color: white;
-  margin-left: 200px;
+  margin-left: 15%;
 }
 
 .footer-nav-list {
   display: flex;
   list-style: none;
   margin-right: 150px;
+  width: 100%;
 }
 
 .footer-nav-item {
-  margin-right: 20px;
+  margin-right: 10px;
 }
 .footer-nav-item a {
-  font-size: 10px;
+  font-size: 12px;
+  width: 100%;
+  height: 10%;
   text-decoration: none;
   color: white;
 }
@@ -167,7 +172,7 @@
   font-size: 16px;
   text-decoration: none;
   color: white;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -309,18 +314,24 @@
   }
 
   .blog {
-    height: 1600px;
+    height: 2150px;
   }
 
   .blog-list {
     display: flex;
     flex-wrap: wrap;
-    margin: 5% 5%;
+    margin: 15% 5%;
   }
 
   .blog-content {
     width: 100%;
     margin: 0;
+    padding-top: 0;
+    padding-left: 0;
+  }
+
+  .blog-content img {
+    width: 100%;
   }
 
   .hamburger-menu {
