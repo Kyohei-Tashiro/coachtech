@@ -287,21 +287,22 @@
   }
 
   .footer-copyright {
-    margin: 0px 35%;
     position: relative;
-    top: 20px;
+    padding-top: 20px;
+    margin: auto;
+    text-align: center;
   }
 
   .footer-nav {
     display: block;
     position: relative;
-    top: 10px;
-    height: 60%;
+    padding-top: 20px;
+    height: 70%;
   }
 
   .footer-nav-list {
     display: block;
-    margin: 5% 0%;
+    margin: 0%;
     height: 100%;
   }
 
