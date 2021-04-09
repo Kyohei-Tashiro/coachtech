@@ -20,18 +20,16 @@ export default {
   },
 
   methods: {
-    getAddress() {
-      async () {
+    async getAddress() {
      const item = await axios.get(
-      `https://apis.postcode-jp.com/api/v4/postcodes/1000001 \-G -v \-d "apikey=eL4LWS5veBtm3u8Rhe1fs5f0PeEQWDxIz9M3XP2"
+      `https://apis.postcode-jp.com/api/v4/postcodes?postcode=${this.address}?"apikey=eL4LWS5veBtm3u8Rhe1fs5f0PeEQWDxIz9M3XP2"
       `);
-      },
 
-      
+      const jyuusyo = item.data;
+      this.address = jyuusyo.address;
 
-
-    },
-  }
+    }
+  },
 
 };
 
