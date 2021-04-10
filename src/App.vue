@@ -3,7 +3,7 @@
     <div class="postcode">
       <input type="text" v-model="address">
       <button  @click="getAddress">住所自動入力</button>
-      <p>Address:{{address}}</p>
+      <p>Address:{{addressJP}}</p>
     </div>
   </div>
 </template>
@@ -15,20 +15,22 @@ export default {
   
   data(){
     return {
-      address: ""
+      addressJP: ""
     };
   },
 
   methods: {
     async getAddress() {
      const item = await axios.get(
-      `https://apis.postcode-jp.com/api/v4/postcodes?postcode=${this.address}?"apikey=eL4LWS5veBtm3u8Rhe1fs5f0PeEQWDxIz9M3XP2"
+      `https://apis.postcode-jp.com/api/v4/postcodes?postcode=${this.allAddress}?"apikey=eL4LWS5veBtm3u8Rhe1fs5f0PeEQWDxIz9M3XP2"
       `);
 
-      this.address = item.data;
-    
-      // const jyuusyo = item.data;
-      // this.address = jyuusyo.address;
+      item.allAddress= this.addressJP;
+
+
+      this.addressJP = item.data;
+
+
 
     }
   },
