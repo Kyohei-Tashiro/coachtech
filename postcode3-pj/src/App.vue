@@ -22,15 +22,16 @@ export default {
   methods: {
     async getAddress() {
       const item = await axios.get(
-        `https://apis.postcode-jp.com/api/v4/postcodes/?postcode=${this.address}&apikey=eL4LWS5veBtm3u8Rhe1fs5f0PeEQWDxIz9M3XP2
-        `);
+        `https://apis.postcode-jp.com/api/v4/postcodes/${this.address}?apikey=eL4LWS5veBtm3u8Rhe1fs5f0PeEQWDxIz9M3XP2
+      `);
 
-      const jyuusyo = item.data;
+      // const jyuusyo = item.data;
 
-      this.addressJP = jyuusyo.allAddress;
+      // this.addressJP = jyuusyo;
+
+      this.addressJP = item.data[0].allAddress;
+
     },
   },
 };
 </script>
-
-<style></style>
